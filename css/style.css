@@ -21,6 +21,5 @@ h4 {
     height: 700px;
     width: 700px;
     display: grid;
-    border: 10px solid #F80012;
-    border-radius: 6%;
+    border: 2px solid black;
 }
