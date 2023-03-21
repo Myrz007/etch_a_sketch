@@ -18,6 +18,10 @@ function createSquare(number) {
 
 function createGrid(number) {
     const gridDimension = number ** 2;
+    const gridTemplateSize = `repeat(${number}, 1fr)`;
+
+    container.style.gridTemplateColumns = gridTemplateSize;
+    container.style.gridTemplateRows = gridTemplateSize;
 
     for (let i = 0; i < gridDimension; i++) createSquare(number);
 }
