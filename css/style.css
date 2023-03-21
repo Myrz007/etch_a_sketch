@@ -1,12 +1,10 @@
 #container {
-    max-width: 960px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
+    height: 960px;
+    width: 960px;
+    display: grid;
+    border: 1px solid black;
 }
 
 .square {
-    height: 8px;
-    width: 8px;
     border: 1px solid black;
 }
