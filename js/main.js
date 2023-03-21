@@ -23,6 +23,9 @@ function createGrid(number) {
 
 createGridButton.addEventListener('click', () => {
     const gridSize = Math.abs(parseInt(document.getElementById('grid-size').value) % 101) || 1;
+    const squares = document.querySelectorAll('.square');
+
+    if (squares.length) squares.forEach((square) => square.remove());
 
     createGrid(gridSize);
 });
