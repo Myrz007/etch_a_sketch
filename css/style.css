@@ -6,15 +6,21 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    color: #E0AA3E;
+}
+
 #size-selector {
     display: flex;
     justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 #container {
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
     display: grid;
-    border: 1px solid black;
+    border: 60px solid #F80012;
+    border-radius: 6%;
 }
