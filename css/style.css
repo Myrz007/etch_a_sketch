@@ -6,8 +6,8 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    color: #E0AA3E;
+h4 {
+    margin-top: 0;
 }
 
 #size-selector {
@@ -21,6 +21,6 @@ h1 {
     height: 700px;
     width: 700px;
     display: grid;
-    border: 60px solid #F80012;
+    border: 10px solid #F80012;
     border-radius: 6%;
 }
