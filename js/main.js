@@ -22,10 +22,16 @@ function createGrid(number) {
 }
 
 createGridButton.addEventListener('click', () => {
-    const gridSize = Math.abs(parseInt(document.getElementById('grid-size').value) % 101) || 1;
+    const warningText = document.querySelector('h4');
+    const gridSize = parseInt(document.getElementById('grid-size').value);
     const squares = document.querySelectorAll('.square');
 
-    if (squares.length) squares.forEach((square) => square.remove());
+    if (gridSize < 1 || gridSize > 100) warningText.style.color = 'red';
+    else {
+        warningText.style.color = 'black';
+        
+        if (squares.length) squares.forEach((square) => square.remove());
 
-    createGrid(gridSize);
+        createGrid(gridSize);
+    }
 });
